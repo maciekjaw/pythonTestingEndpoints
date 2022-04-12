@@ -1,6 +1,7 @@
 import requests as re
 import unittest
-
+import pytest
+import mathlib
 
 class Endpoints(unittest.TestCase):
     def test_google(self):
@@ -10,3 +11,14 @@ class Endpoints(unittest.TestCase):
         
     if __name__ == '__main__':
         unittest.main()
+
+def capital_case(x):
+    return x.capitalize()
+
+def test_capital_case():
+    assert capital_case('semaphore') == 'Semaphore'
+
+ 
+def test_calc_addition():
+    output = mathlib.calc_addition(2,4)
+    assert output == 6
