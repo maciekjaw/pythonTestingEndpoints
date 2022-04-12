@@ -18,7 +18,3 @@ def capital_case(x):
 def test_capital_case():
     assert capital_case('semaphore') == 'Semaphore'
 
- 
-def test_calc_addition():
-    output = mathlib.calc_addition(2,4)
-    assert output == 6
